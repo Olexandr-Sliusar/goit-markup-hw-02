@@ -2,7 +2,9 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --secondary-accent-color: #188ce8;
   --primary-white-color: #ffffff;
+  --primary-black-color: #000000;
   --secondary-white-color: rgba(255, 255, 255, 0.6);
   --section-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
@@ -56,7 +58,7 @@ main {
 }
 
 .header .logo-text {
-  color: #000000;
+  color: var(--primary-black-color);
 }
 
 .footer .logo-text {
@@ -67,7 +69,7 @@ main {
 .header {
   background-color: var(--primary-white-color);
   font-weight: 500;
-  line-height: 1.142857142857143;
+  line-height: 1.1;
   letter-spacing: 0.02em;
 }
 
@@ -114,7 +116,7 @@ main {
 .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.166666666666667;
+  line-height: 1.2;
   text-align: center;
   color: var(--title-text-color);
 }
@@ -127,7 +129,7 @@ main {
 .solution-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.363636363636364;
+  line-height: 1.4;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -141,7 +143,7 @@ main {
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: 1.9;
   display: flex;
   align-items: center;
   text-align: center;
@@ -150,13 +152,13 @@ main {
 }
 
 .solution-button:hover,
-.solution-button:hover {
-  background: #188ce8;
+.solution-button:focus {
+  background: var(--secondary-accent-color);
 }
 
 /* section peculiarities */
 .peculiarities {
-  line-height: 1.714285714285714;
+  line-height: 1.7;
 }
 
 .peculiarities-title {
@@ -171,7 +173,7 @@ main {
 .peculiarities-item-title {
   font-weight: 700;
   font-size: inherit;
-  line-height: 1.142857142857143;
+  line-height: 1.1;
   text-transform: uppercase;
   color: var(--title-text-color);
 }
@@ -197,7 +199,7 @@ main {
 
 /* section team */
 .team {
-  line-height: 1.1875;
+  line-height: 1.2;
   background-color: var(--section-bg-color);
 }
 
@@ -242,7 +244,7 @@ main {
 .projects-filter-list {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.625;
+  line-height: 1.6;
   color: var(--title-text-color);
 }
 
@@ -257,14 +259,20 @@ main {
 }
 
 .portfolio-filter-btn {
+  font-family: inherit;
   cursor: pointer;
   text-align: center;
   background-color: var(--section-bg-color);
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  border-style: none;
 }
 
 .projects-list {
   font-size: 16px;
-  line-height: 1.875;
+  line-height: 1.9;
 }
 
 .project-item {
@@ -297,7 +305,7 @@ main {
 }
 
 .footer-list {
-  line-height: 1.714285714285714;
+  line-height: 1.7;
   color: var(--secondary-white-color);
 }
 
